@@ -3,8 +3,8 @@
     <div class="home">
       <h3>Pokemon</h3>
       <section class="grid">
-        <div v-for="p in pokemon" :key="p.id">
-          <h6>{{ p.name }}</h6>
+        <div class="card" v-for="p in pokemon" :key="p.id">
+          <div class="header"><h6>{{ p.name }}</h6></div>
           <img :src="p.imageUrl" :alt="p.name" class="pokemon"/>
         </div>
       </section>
@@ -62,12 +62,25 @@ h3 {
 }
 
 h6 {
-  font-size:1em;
+  font-size:1.25em;
 }
 
-button {
+div.card {
+  border-radius:30px;
+  border:.25px lightgray solid;
+  margin:5px;
+}
+
+div.header {
+  width:100%;
   color:white;
   background: linear-gradient(90deg,#3F00A5 0%,#813EEF 100%);
+  display:flex;
+  justify-content:space-around;
+  align-items:center;
+  border-top-left-radius:30px;
+  border-top-right-radius:30px;
+  height:60px;
 }
 
 a {
@@ -94,5 +107,6 @@ section.grid {
 img.pokemon {
   height:100px;
   width:100px;
+  padding:25px 10px;
 }
 </style>
