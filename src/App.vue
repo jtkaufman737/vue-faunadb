@@ -2,4 +2,3 @@
   <div id="app">
   </div>
 </template>
-
