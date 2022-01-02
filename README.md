@@ -1,5 +1,7 @@
 # vue-faunadb
 
+A Hello ~~World~~ [FaunaDB](https://fauna.com/) application built using [VueJS](https://vuejs.org/). This uber-simple application fetches pokemon data from a data store and displays the results, including icons from this [adorable icon set](https://www.iconfinder.com/iconsets/pokemon-go-vol-2). 
+
 ## Project setup
 ```
 yarn install
