@@ -1,7 +1,6 @@
 import Vue from 'vue'
 import App from './App.vue'
 import faunadb from 'faunadb'
-import './registerServiceWorker'
 
 const db = new faunadb.Client({
     secret: process.env.VUE_APP_FAUNADB_SECRET, 
